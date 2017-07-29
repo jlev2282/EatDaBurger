@@ -1,0 +1,31 @@
+{
+  "name": "eatdaburger",
+  "version": "1.0.0",
+  "description": "Component Consumption and Reassignment app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlev2282/EatDaBurger.git"
+  },
+  "keywords": [
+    "burger",
+    "consumption",
+    "reassignment"
+  ],
+  "author": "John Leverett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlev2282/EatDaBurger/issues"
+  },
+  "homepage": "https://github.com/jlev2282/EatDaBurger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.0"
+  }
+}
