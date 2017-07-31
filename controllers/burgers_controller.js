@@ -17,11 +17,14 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-    burger.create(["name"], [req.body.name], function() {
+    burger.insert(["name"], [req.body.name], function() {
         res.redirect("/");
     });
 });
 
 router.delete("/:id", function(req, res) {
     
-})
+});
+
+//Export routes for server.js to use
+module.exports= router;
