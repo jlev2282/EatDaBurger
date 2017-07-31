@@ -1,20 +1,34 @@
-<ul>
-  {{#each burgers}}
-    {{#unless this.devoured}}
-      <li>
-        {{this.burger_name}}
-      </li>
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Add a burger</h2>
-<form class="create-update-form" action="/" method="POST">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <li>
+              {{this.burger_name}}
+              {{>delete-burger}}
+            </li>
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-6">For devoured</div>
   </div>
+</div>
 
-  <button type="submit">Add Burger</button>
-</form>
+<div class="container" id="createburger">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="burger">Add a burger</h2>
+      <form class="create-update-form" action="/" method="POST">
+
+        <div class="form-group">
+          <label for="burgername">Burger Name:</label>
+          <input type="text" id="burgername" name="burgnam">
+        </div>
+
+        <button type="submit">Add Burger</button>
+      </form>
+    </div>
+  </div>
+</div>

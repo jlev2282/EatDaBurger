@@ -14,11 +14,17 @@ var burger = {
         });
     },
 
-    update: function(objcolvals, condition, cb) {
-        orm.updateOne("burgers", objcolvals, condition, function(res) {
+    update: function(objColvals, condition, cb) {
+        orm.updateOne("burgers", objColvals, condition, function(res) {
+            cb(res);
+        });
+    },
+    delete: function(condition, cb) {
+        orm.delete("burgers", condition, function(res) {
             cb(res);
         });
     }
+
 };
 
 //Export the database functions for the controller

@@ -17,13 +17,17 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-    burger.insert(["name"], [req.body.name], function() {
+    burger.insert(["burger_name"], [req.body.burgnam], function() {
         res.redirect("/");
     });
 });
 
 router.delete("/:id", function(req, res) {
-    
+    var condition = "id = "+ req.params.id;
+
+    burger.delete(condition, function() {
+        res.redirect("/");
+    });
 });
 
 //Export routes for server.js to use
