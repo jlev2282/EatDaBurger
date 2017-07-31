@@ -1,3 +1,13 @@
+<ul>
+  {{#each burgers}}
+    {{#unless this.devoured}}
+      <li>
+        {{this.burger_name}}
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
 <h2>Add a burger</h2>
 <form class="create-update-form" action="/" method="POST">
 
