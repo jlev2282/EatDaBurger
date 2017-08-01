@@ -1,34 +1,41 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <ul>
-        {{#each burgers}}
-          {{#unless this.devoured}}
-            <li>
-              {{this.burger_name}}
-              {{>delete-burger}}
-            </li>
-          {{/unless}}
-        {{/each}}
-      </ul>
-    </div>
-    <div class="col-md-6">For devoured</div>
+  <div class="jumbotron">
+    <h1>EAT DAT BURGER!!</h1>
+    <img id="logo" src="http://cdn.wallpapersafari.com/60/53/ZjsAkn.jpg" height="200vh" width="200vw">
   </div>
-</div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          {{#each burgers}}
+            {{#unless this.devoured}}
+              <li>
+                {{this.burger_name}}
+                {{>delete-burger}}
+              </li>
+            {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-md-6">For devoured</div>
+    </div>
+  </div>
 
-<div class="container" id="createburger">
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="burger">Add a burger</h2>
-      <form class="create-update-form" action="/" method="POST">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="createburger">
+        <h2>Add a Burger</h2>
+        <form class="create-update-form" action="/" method="POST">
 
-        <div class="form-group">
-          <label for="burgername">Burger Name:</label>
-          <input type="text" id="burgername" name="burgnam">
-        </div>
+          <div class="form-group">
+            <label for="burgername">Burger Name:</label>
+            <input type="text" id="burgername" name="burgnam">
+          </div>
 
-        <button type="submit">Add Burger</button>
-      </form>
+          <button type="submit">Add Burger</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>

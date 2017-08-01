@@ -1,11 +1,16 @@
 #createburger {
     text-align: center;
-}
+    background-color: red;
+};
 
 body {
- background-color: orangered;
-}
+color: orangered
+};
 
-.burger {
-    color: red;
+.top {
+    color: red
+};
+
+#logo {
+    text-align: center;
 }
