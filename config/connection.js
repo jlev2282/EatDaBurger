@@ -9,6 +9,18 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
+var connection = mysql.createConnection({
+    driver: 'mysql',
+    host: env('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net'),
+    database: env('DB_DATABASE', 'heroku_8fe5ab374301543'),
+    username: env('DB_USERNAME', 'b06b3ab972e2ff'),
+    password: env('DB_PASSWORD', '5efcd0c3'),
+    charset: 'utf8',
+    collation:'utf8_unicode_ci',
+    prefix: '',
+    strict: false,
+});
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {

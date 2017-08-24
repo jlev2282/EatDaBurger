@@ -4,13 +4,21 @@
 };
 
 body {
-color: orangered
-};
+    background-color: blue;
+}
 
 .top {
     color: red
 };
 
-#logo {
+.logo {
     text-align: center;
+}
+
+#logo {
+    border-color: black;
+    display: block;
+    margin: 0 auto;
+    height:201px;
+    width:201px;
 }
