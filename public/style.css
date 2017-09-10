@@ -1,18 +1,17 @@
 #createburger {
     text-align: center;
-    background-color: red;
-};
-
-body {
-    background-color: blue;
 }
 
-.top {
-    color: red
-};
+#bodycss {
+    background-image: url("images/best-burgers-hero.jpg");
+}
 
-.logo {
+h1 {
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
 }
 
 #logo {

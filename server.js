@@ -26,6 +26,6 @@ var routes = require("./controllers/burgers_controller.js");
 
 app.use("/", routes);
 
+// Allows local or Heroku server ports
 app.listen(process.env.PORT || port);
-// app.listen(port);
 console.log("Congratulations Coder! I'm listening on port "+port);
