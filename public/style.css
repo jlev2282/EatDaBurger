@@ -3,7 +3,12 @@
 }
 
 #bodycss {
-    background-image: url("images/best-burgers-hero.jpg");
+    /*background-image: url("images/best-burgers-hero.jpg");*/
+    background: url("images/best-burgers-hero.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
@@ -20,4 +25,9 @@ h1 {
     margin: 0 auto;
     height:201px;
     width:201px;
+}
+
+#instruct {
+    background-color: white;
+    border-radius: 5px;
 }
