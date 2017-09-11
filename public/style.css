@@ -27,6 +27,10 @@ h1, h2 {
     width:201px;
 }
 
+/*.columnhead {
+    text-decoration: underline;
+}*/
+
 #instruct {
     text-align: center;
     background-color: white;
@@ -37,5 +41,4 @@ h1, h2 {
     border: solid;
     border-color: white;
     border-radius: 3px;
-    text-align: center;
 }
