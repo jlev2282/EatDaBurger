@@ -11,7 +11,7 @@
     background-size: cover;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-family: 'Gloria Hallelujah', cursive;
@@ -36,4 +36,6 @@ h1 {
 #stage {
     border: solid;
     border-color: white;
+    border-radius: 3px;
+    text-align: center;
 }
