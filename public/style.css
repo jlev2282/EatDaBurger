@@ -32,3 +32,8 @@ h1 {
     background-color: white;
     border-radius: 5px;
 }
+
+#stage {
+    border: solid;
+    border-color: white;
+}
